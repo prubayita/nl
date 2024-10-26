@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Background Scroll Effect</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    body, html {
+      overflow-x: hidden;
+      height: 100%;
+    }
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .video-bg {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .content-section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-center;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Video Background Container -->
+  <div class="video-container">
+    <video class="video-bg" autoplay loop muted playsinline>
+      <source src="VisitRwanda.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Scrollable Content Sections -->
+  <div class="space-y-10">
+    <section class="content-section bg-opacity-50 flex items-center justify-center">
+      <h1 class="text-4xl font-bold">Welcome to Our Site</h1>
+    </section>
+    <section class="content-section bg-opacity-50 flex items-center justify-center">
+      <h2 class="text-4xl">About Us</h2>
+      <p class="text-lg text-center mt-4 max-w-xl">
+        Learn more about what we do and our mission to bring you amazing experiences.
+      </p>
+    </section>
+    <section class="content-section bg-opacity-50 flex items-center justify-center">
+      <h2 class="text-4xl">Our Services</h2>
+      <p class="text-lg text-center mt-4 max-w-xl">
+        Discover the wide range of services we offer to help you succeed.
+      </p>
+    </section>
+    <section class="content-section bg-opacity-50 flex items-center justify-center">
+      <h2 class="text-4xl">Contact Us</h2>
+      <p class="text-lg text-center mt-4 max-w-xl">
+        Get in touch with us for any inquiries or support.
+      </p>
+    </section>
+  </div>
+
+  <!-- Optional JavaScript for Scroll Effects -->
+  <script>
+    // Add JavaScript here if you want to enhance scroll effects.
+  </script>
+</body>
+</html>
