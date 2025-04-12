@@ -6,11 +6,16 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
-  <body>
+  <body class="" style="font-family: 'Poppins', sans-serif;">
     <style>
         /* CSS Code */
         .swiper-wrapper {
@@ -46,20 +51,20 @@
           <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
               <li class="mr-3">
-                <a class="inline-block py-2 px-4 text-gray-300 font-bold no-underline" href="#">Active</a>
+                <a class="inline-block py-2 px-4 text-gray-300 font-bold no-underline" href="#">Destinations</a>
               </li>
               <li class="mr-3">
-                <a class="inline-block text-gray-200 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="#">link</a>
+                <a class="inline-block text-gray-200 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="#">About Us</a>
               </li>
               <li class="mr-3">
-                <a class="inline-block text-gray-200 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="#">link</a>
+                <a class="inline-block text-gray-200 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="#">Contact</a>
               </li>
             </ul>
             <button
               id="navAction"
               class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
             >
-              Action
+              Enquire
             </button>
           </div>
         </div>
@@ -77,22 +82,38 @@
       
           <!-- Content Slides -->
           <div class="swiper vertical-slide-carousel swiper-container relative h-screen">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper text-gray-200">
+              <!-- SLIDE 1 -->
               <div class="swiper-slide">
-                <div class="h-screen flex justify-center items-center">
-                  <span class="text-3xl font-semibold text-indigo-600">Slide 1</span>
+                <div class="h-screen flex flex-col justify-center items-center">
+                  <h1 class="font-sans text-6xl font-bold" style="font-family: 'Edu AU VIC WA NT Pre', sans-serif;">Genuine Safaris</h1>
+                  <p class="mt-4 text-lg">Discover Asilia’s authentic safaris in East Africa’s iconic wilderness that make a genuine difference to local communities and conservation.</p>
+                  <a href="#" class="pt-4">
+                    <button type='button' class='py-2.5 px-6 text-sm rounded-full border-2 border-solid border-gray-200 text-gray-200 cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gray-200 hover:text-gray-900'>Destinations</button>
+                  </a>
                 </div>
               </div>
+              <!-- SLIDE 2 -->
               <div class="swiper-slide">
-                <div class="h-screen flex justify-center items-center">
-                  <span class="text-3xl font-semibold text-indigo-600">Slide 2</span>
+                <div class="h-screen flex flex-col justify-center items-center">
+                  <h1 class="font-sans text-6xl font-bold" style="font-family: 'Edu AU VIC WA NT Pre', sans-serif;">Genuine Safaris</h1>
+                  <p class="mt-4 text-lg">Welcome to the future of the web!</p>
+                  <a href="#" class="pt-4">
+                    <button type='button' class='py-2.5 px-6 text-sm rounded-full border-2 border-solid border-gray-200 text-gray-200 cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gray-200 hover:text-gray-900'>Enquire</button>
+                  </a>
                 </div>
               </div>
+              <!-- SLIDE 3 -->
               <div class="swiper-slide">
-                <div class="h-screen flex justify-center items-center">
-                  <span class="text-3xl font-semibold text-indigo-600">Slide 3</span>
+                <div class="h-screen flex flex-col justify-center items-center">
+                  <h1 class="font-sans text-6xl font-bold" style="font-family: 'Edu AU VIC WA NT Pre', sans-serif;">Genuine Safaris</h1>
+                  <p class="mt-4 text-lg">Welcome to the future of the web!</p>
+                  <a href="#" class="pt-4">
+                    <button type='button' class='py-2.5 px-6 text-sm rounded-full border-2 border-solid border-gray-200 text-gray-200 cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gray-200 hover:text-gray-900'>About Us</button>
+                  </a>
                 </div>
               </div>
+              <!-- SLIDE 4 FOR SMOOTH TRANSITION -->
               <div class="swiper-slide">
                 <div class="h-screen flex justify-center items-center">
                   <span class="text-3xl font-semibold text-indigo-600"></span>
@@ -131,7 +152,7 @@
     </section> -->
 
 
-    <section>
+    <section class="bg-[#123338] text-gray-200">
         <div class="flex flex-wrap">
             <div class="w-full sm:w-8/12 mb-10">
               <div class="container mx-auto h-full sm:p-10">
@@ -153,34 +174,48 @@
                 </header>
               </div>
             </div>
-            <img src="https://images.unsplash.com/photo-1536147116438-62679a5e01f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Leafs" class="w-full h-48 object-cover sm:h-screen sm:w-4/12">
+            <img src="image/1.jpg" alt="Leafs" class="w-full h-48 object-cover sm:h-screen sm:w-4/12">
         </div>
     </section>
 
     <!--HTML CODE-->
     <section>
-        <div class="w-full relative">
-            <div class="swiper progress-slide-carousel swiper-container relative">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="rounded-2xl h-[600px] flex justify-center items-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1536147116438-62679a5e01f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');">
-                    <span class="text-3xl font-semibold text-indigo-600">Slide 1</span>
-                    </div>
+      <div class="w-full relative text-gray-200">
+        <div class="swiper progress-slide-carousel swiper-container relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="h-[600px] text-left flex flex-col justify-center items-start bg-cover bg-center" style="background-image: url('image/2.jpg');">
+                <div class=" ml-20">
+                  <h1 class="font-sans text-3xl font-bold">Don't Just take our word for it</h1>
+                  <p class="mt-4 text-3xl mt-20">"This was our second safari trip with Asilia and once <br> more all our expectations were succeeded!"</p>
                 </div>
-                <div class="swiper-slide">
-                    <div class="rounded-2xl h-[600px] flex justify-center items-center bg-cover bg-center" style="background-image: url('https://www.asiliaafrica.com/wp-content/uploads/2024/02/All-Asilia_Safari-Vehicle_959-x-1199.png');">
-                    <span class="text-3xl font-semibold text-indigo-600">Slide 2</span>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="rounded-2xl h-[600px] flex justify-center items-center bg-cover bg-center" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/2024-bmw-x6-112-1675791922.jpg?crop=0.804xw:0.678xh;0.0897xw,0.175xh&resize=1200:*');">
-                    <span class="text-3xl font-semibold text-indigo-600">Slide 3</span>
-                    </div>
-                </div>
-                </div>
-                <div class="swiper-pagination !bottom-2 !top-auto !w-80 right-0 mx-auto bg-gray-100"></div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="h-[600px] text-left flex flex-col justify-center items-start bg-cover bg-center" style="background-image: url('image/2.jpg');">
+                <div class=" ml-20">
+                  <h1 class="font-sans text-3xl font-bold">Don't Just take our word for it</h1>
+                  <p class="mt-4 text-3xl mt-20">"This was our second safari trip with Asilia and once <br> more all our expectations were succeeded!"</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="h-[600px] text-left flex flex-col justify-center items-start bg-cover bg-center" style="background-image: url('image/2.jpg');">
+                <div class=" ml-20">
+                  <h1 class="font-sans text-3xl font-bold">Don't Just take our word for it</h1>
+                  <p class="mt-4 text-3xl mt-20">"This was our second safari trip with Asilia and once <br> more all our expectations were succeeded!"</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide">
+              <div class="h-[600px] flex justify-center items-center bg-cover bg-center" style="background-image: url('image/7.jpeg');">
+                <span class="text-3xl font-semibold text-indigo-600">Slide 3</span>
+              </div>
+            </div> -->
+          </div>
+            <!-- <div class="swiper-pagination !bottom-2 !top-auto !w-80 right-0 mx-auto bg-gray-100"></div> -->
         </div>
+      </div>
     </section>
       
     <!-- <section>
