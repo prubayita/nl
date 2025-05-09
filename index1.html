@@ -60,45 +60,157 @@
   </style>
 </head>
 <body class="bg-gray-900 text-white overflow-x-hidden">
-  <!--Nav-->
-  <nav id="header" class="fixed w-full z-30 top-0 text-white navbar-transparent">
-    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-      <div class="pl-4 flex items-center">          
-        <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-          <img src="L2.png" alt="Logo" id="navbar-logo" class="h-8 lg:h-12">
+  <nav id="header" class="fixed w-full z-30 top-0 bg-transparent text-white transition-all duration-300 ease-in-out">
+    <div class="container mx-auto flex flex-wrap items-center justify-between py-2">
+      <!-- Logo -->
+      <div class="pl-4 flex items-center">
+        <a href="#">
+          <img id="navbar-logo" src="L2.png" alt="Logo" class="h-8 lg:h-12">
         </a>
       </div>
+  
+      <!-- Mobile Menu Button -->
       <div class="block lg:hidden pr-4">
-        <button id="nav-toggle" class="flex items-center p-1 text-gray-200 hover:text-gray-400 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
+        <button id="nav-toggle" class="text-white focus:outline-none">
+          <svg class="fill-current h-6 w-6" viewBox="0 0 20 20">
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
       </div>
-      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-        <ul class="list-reset lg:flex justify-end flex-1 items-center">
-          <li class="mr-3">
-            <a class="inline-block py-2 px-4 text-gray-300 font-bold no-underline" href="#">Active</a>
+  
+      <!-- Navigation Menu -->
+      <div id="nav-content" class="w-full lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20">
+        <ul class="list-reset lg:flex flex-1 items-center justify-end space-y-2 lg:space-y-0 lg:space-x-6">
+          <!-- Destinations -->
+          <li class="relative group">
+            <button class="text-gray-200 lg:text-inherit py-2 px-4 font-bold flex items-center gap-1">
+              Destinations
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                <path d="M5.25 7.5l4.75 4.75 4.75-4.75z" />
+              </svg>
+            </button>
+            <!-- Countries Dropdown -->
+            <ul class="absolute hidden group-hover:block bg-white text-gray-800 rounded shadow-md mt-2 z-30 min-w-[180px]">
+              <!-- Rwanda -->
+              <li class="relative group">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Rwanda
+                  <svg class="w-3 h-3 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 6l6 4-6 4V6z" />
+                  </svg>
+                </a>
+                <ul class="absolute hidden group-hover:block bg-white text-gray-800 rounded shadow-md left-full top-0 mt-0 ml-1 z-40 min-w-[160px]">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Volcanoes</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Nyungwe</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Akagera</a></li>
+                </ul>
+              </li>
+  
+              <!-- Uganda -->
+              <li class="relative group">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Uganda
+                  <svg class="w-3 h-3 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 6l6 4-6 4V6z" />
+                  </svg>
+                </a>
+                <ul class="absolute hidden group-hover:block bg-white text-gray-800 rounded shadow-md left-full top-0 mt-0 ml-1 z-40 min-w-[160px]">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Bwindi</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Murchison Falls</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Kidepo</a></li>
+                </ul>
+              </li>
+  
+              <!-- Tanzania -->
+              <li class="relative group">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Tanzania
+                  <svg class="w-3 h-3 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 6l6 4-6 4V6z" />
+                  </svg>
+                </a>
+                <ul class="absolute hidden group-hover:block bg-white text-gray-800 rounded shadow-md left-full top-0 mt-0 ml-1 z-40 min-w-[160px]">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Serengeti</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Ngorongoro</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Zanzibar</a></li>
+                </ul>
+              </li>
+  
+              <!-- Kenya -->
+              <li class="relative group">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Kenya
+                  <svg class="w-3 h-3 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 6l6 4-6 4V6z" />
+                  </svg>
+                </a>
+                <ul class="absolute hidden group-hover:block bg-white text-gray-800 rounded shadow-md left-full top-0 mt-0 ml-1 z-40 min-w-[160px]">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Masai Mara</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Amboseli</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Lake Nakuru</a></li>
+                </ul>
+              </li>
+            </ul>
           </li>
-          <li class="mr-3">
-            <a class="inline-block text-gray-200 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="#">link</a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-gray-200 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="#">link</a>
-          </li>
+  
+          <!-- Static Links -->
+          <li><a href="#" class="text-gray-200 lg:text-inherit hover:text-gray-400 py-2 px-4">About Us</a></li>
+          <li><a href="#" class="text-gray-200 lg:text-inherit hover:text-gray-400 py-2 px-4">Contact</a></li>
         </ul>
-        <button
-          id="navAction"
-          class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-        >
-          Action
+  
+        <!-- Enquire Button -->
+        <button id="navAction" class="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-6 shadow hover:scale-105 transition">
+          Enquire
         </button>
       </div>
     </div>
-    <!-- <hr class="border-b border-gray-100 opacity-25 my-0 py-0" /> -->
   </nav>
+  
+  <!-- JS: Mobile Toggle -->
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function () {
+      document.getElementById('nav-content').classList.toggle('hidden');
+    });
+  </script>
+  
+  <!-- JS: Scroll Behavior -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.getElementById("header");
+      const navLinks = header.querySelectorAll("a");
+      const button = document.getElementById("navAction");
+      const logo = document.getElementById("navbar-logo");
+  
+      if (window.scrollY > 10) {
+        header.classList.remove("bg-transparent", "text-white");
+        header.classList.add("bg-white", "text-black", "shadow-md");
+  
+        navLinks.forEach(link => {
+          link.classList.remove("text-white", "text-gray-200");
+          link.classList.add("text-black");
+        });
+  
+        button.classList.remove("bg-white", "text-gray-800");
+        button.classList.add("bg-black", "text-white");
+  
+      } else {
+        header.classList.add("bg-transparent", "text-white");
+        header.classList.remove("bg-white", "text-black", "shadow-md");
+  
+        navLinks.forEach(link => {
+          link.classList.remove("text-black");
+          link.classList.add("text-white");
+        });
+  
+        button.classList.remove("bg-black", "text-white");
+        button.classList.add("bg-white", "text-gray-800");
+      }
+    });
+  </script>
+  
+  
 
+  
   <!-- Hero Section -->
   <section class="relative h-screen overflow-hidden">
     <!-- Video Background -->

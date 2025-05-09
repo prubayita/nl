@@ -27,46 +27,268 @@
             background: #4F46E5 !important;
             }
     </style>
+    
     <!-- NavBar -->
     <section>
-        <nav id="header" class="fixed w-full z-30 top-0 text-white navbar-transparent">
-            <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-              <div class="pl-4 flex items-center">          
-                <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-                  <img src="L2.png" alt="Logo" id="navbar-logo" class="h-8 lg:h-12">
-                </a>
+        <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent text-white">
+          <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+              <!-- Logo -->
+              <a href="#" class="flex items-center">
+                <img src="L2.png" alt="Logo" class="h-8 w-auto">
+              </a>
+      
+              <!-- Desktop Menu -->
+              <div class="hidden lg:flex items-center space-x-8">
+                <!-- Destinations Dropdown -->
+                <div class="relative group">
+                  <button class="flex items-center space-x-1 hover:text-gray-300 transition">
+                    <span>Destinations</span>
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+      
+                  <div class="absolute hidden group-hover:block pt-4 left-0 min-w-[200px]">
+                    <div class="bg-white text-black rounded-lg shadow-lg py-2">
+                      <!-- Rwanda -->
+                      <div class="relative group/submenu">
+                        <div
+                          class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                          <span>Rwanda</span>
+                          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                  clip-rule="evenodd"/>
+                          </svg>
+                        </div>
+                        <div
+                          class="absolute left-full top-0 hidden group-hover/submenu:block bg-white shadow-lg rounded-lg ml-1 py-2 min-w-[160px]">
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Volcanoes NP</a>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Nyungwe Forest</a>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Akagera NP</a>
+                        </div>
+                      </div>
+      
+                      <!-- Uganda -->
+                      <div class="relative group/submenu">
+                        <div
+                          class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                          <span>Uganda</span>
+                          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                  clip-rule="evenodd"/>
+                          </svg>
+                        </div>
+                        <div
+                          class="absolute left-full top-0 hidden group-hover/submenu:block bg-white shadow-lg rounded-lg ml-1 py-2 min-w-[160px]">
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bwindi Forest</a>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Murchison Falls</a>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Queen Elizabeth</a>
+                        </div>
+                      </div>
+      
+                      <!-- Tanzania -->
+                      <div class="relative group/submenu">
+                        <div
+                          class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                          <span>Tanzania</span>
+                          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                  clip-rule="evenodd"/>
+                          </svg>
+                        </div>
+                        <div
+                          class="absolute left-full top-0 hidden group-hover/submenu:block bg-white shadow-lg rounded-lg ml-1 py-2 min-w-[160px]">
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Serengeti NP</a>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ngorongoro Crater</a>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Zanzibar</a>
+                        </div>
+                      </div>
+      
+                      <!-- Kenya -->
+                      <div class="relative group/submenu">
+                        <div
+                          class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                          <span>Kenya</span>
+                          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                  clip-rule="evenodd"/>
+                          </svg>
+                        </div>
+                        <div
+                          class="absolute left-full top-0 hidden group-hover/submenu:block bg-white shadow-lg rounded-lg ml-1 py-2 min-w-[160px]">
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Maasai Mara</a>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Amboseli NP</a>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Mount Kenya</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <a href="#" class="hover:text-gray-300 transition">About</a>
+                <a href="#" class="hover:text-gray-300 transition">Contact</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Enquire</a>
               </div>
-              <div class="block lg:hidden pr-4">
-                <button id="nav-toggle" class="flex items-center p-1 text-gray-200 hover:text-gray-400 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                  </svg>
-                </button>
-              </div>
-              <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-                <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                  <li class="mr-3">
-                    <a class="inline-block py-2 px-4 text-gray-300 font-bold no-underline" href="destination.html">Destinations</a>
-                  </li>
-                  <li class="mr-3">
-                    <a class="inline-block text-gray-200 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="#">About Us</a>
-                  </li>
-                  <li class="mr-3">
-                    <a class="inline-block text-gray-200 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="#">Contact</a>
-                  </li>
-                </ul>
-                <button
-                  id="navAction"
-                  class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                >
-                  Enquire
-                </button>
+      
+              <!-- Mobile Menu Button -->
+              <button id="mobile-menu-button" class="lg:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+      
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden fixed w-full bg-white shadow-lg hidden top-16 z-50 text-black">
+          <div class="px-4 py-2 space-y-2">
+            <!-- Destinations Accordion -->
+            <div>
+              <button onclick="toggleMobileSubmenu('destinations')"
+                      class="w-full flex justify-between items-center px-4 py-2 hover:bg-gray-100 rounded-lg">
+                <span>Destinations</span>
+                <svg id="destinations-arrow"
+                     class="w-4 h-4 transform transition-transform"
+                     fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"/>
+                </svg>
+              </button>
+              <div id="destinations-submenu" class="pl-4 hidden space-y-2">
+                <!-- Rwanda -->
+                <div>
+                  <button onclick="toggleMobileSubmenu('rwanda')"
+                          class="w-full flex justify-between items-center px-4 py-2 hover:bg-gray-100 rounded-lg">
+                    <span>Rwanda</span>
+                    <svg id="rwanda-arrow"
+                         class="w-4 h-4 transform transition-transform"
+                         fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+                  <div id="rwanda-submenu" class="pl-4 hidden space-y-2">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Volcanoes NP</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Nyungwe Forest</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Akagera NP</a>
+                  </div>
+                </div>
+                <!-- Uganda -->
+                <div>
+                  <button onclick="toggleMobileSubmenu('uganda')"
+                          class="w-full flex justify-between items-center px-4 py-2 hover:bg-gray-100 rounded-lg">
+                    <span>Uganda</span>
+                    <svg id="uganda-arrow"
+                         class="w-4 h-4 transform transition-transform"
+                         fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+                  <div id="uganda-submenu" class="pl-4 hidden space-y-2">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Bwindi Forest</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Murchison Falls</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Queen Elizabeth</a>
+                  </div>
+                </div>
+                <!-- Tanzania -->
+                <div>
+                  <button onclick="toggleMobileSubmenu('tanzania')"
+                          class="w-full flex justify-between items-center px-4 py-2 hover:bg-gray-100 rounded-lg">
+                    <span>Tanzania</span>
+                    <svg id="tanzania-arrow"
+                         class="w-4 h-4 transform transition-transform"
+                         fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+                  <div id="tanzania-submenu" class="pl-4 hidden space-y-2">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Serengeti NP</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Ngorongoro Crater</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Zanzibar</a>
+                  </div>
+                </div>
+                <!-- Kenya -->
+                <div>
+                  <button onclick="toggleMobileSubmenu('kenya')"
+                          class="w-full flex justify-between items-center px-4 py-2 hover:bg-gray-100 rounded-lg">
+                    <span>Kenya</span>
+                    <svg id="kenya-arrow"
+                         class="w-4 h-4 transform transition-transform"
+                         fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+                  <div id="kenya-submenu" class="pl-4 hidden space-y-2">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Maasai Mara</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Amboseli NP</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Mount Kenya</a>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- <hr class="border-b border-gray-100 opacity-25 my-0 py-0" /> -->
-        </nav>
-    </section>
+      
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">About</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Contact</a>
+            <a href="#" class="block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Enquire</a>
+          </div>
+        </div>
+      
+        <script>
+          // Scroll effect
+          window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+              navbar.classList.add('bg-white', 'text-black', 'shadow-md');
+              navbar.classList.remove('bg-transparent', 'text-white');
+            } else {
+              navbar.classList.remove('bg-white', 'text-black', 'shadow-md');
+              navbar.classList.add('bg-transparent', 'text-white');
+            }
+          });
+      
+          // Mobile menu toggle
+          const mobileMenuButton = document.getElementById('mobile-menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+          mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+      
+          // Mobile submenu toggle
+          function toggleMobileSubmenu(key) {
+            const submenu = document.getElementById(`${key}-submenu`);
+            const arrow   = document.getElementById(`${key}-arrow`);
+            submenu.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+          }
+      
+          // Click outside to close mobile menu
+          document.addEventListener('click', (e) => {
+            if (
+              !mobileMenu.contains(e.target) &&
+              !mobileMenuButton.contains(e.target)
+            ) {
+              mobileMenu.classList.add('hidden');
+            }
+          });
+        </script>
+      </section>
 
     <!-- header -->
     <section class="relative h-full bg-cover bg-center bg-no-repeat" style="background-image: url('image/3.jpg');">
@@ -231,7 +453,7 @@
         },
         });
     </script>
-   
+       
 </body>
 </html>
 
