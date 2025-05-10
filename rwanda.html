@@ -33,7 +33,7 @@
         <div class="container mx-auto px-4">
           <div class="flex justify-between items-center h-16">
             <!-- Logo -->
-            <a href="#" class="flex items-center">
+            <a href="index.html" class="flex items-center">
               <img src="L2.png" alt="Logo" class="h-8 w-auto">
             </a>
     
@@ -41,22 +41,25 @@
             <div class="hidden lg:flex items-center space-x-8">
               <!-- Destinations Dropdown -->
               <div class="relative group">
-                <button class="flex items-center space-x-1 hover:text-gray-300 transition">
-                  <span>Destinations</span>
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                          clip-rule="evenodd"/>
-                  </svg>
-                </button>
+                <a href="destination.html">                  
+                  <button class="flex items-center space-x-1 hover:text-gray-300 transition">
+                    <span>Destinations</span>
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+                </a>
     
                 <div class="absolute hidden group-hover:block pt-4 left-0 min-w-[200px]">
                   <div class="bg-white text-black rounded-lg shadow-lg py-2">
                     <!-- Rwanda -->
                     <div class="relative group/submenu">
-                      <div
-                        class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                        <span>Rwanda</span>
+                      <div class="flex justify-between items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                        <a href="rwanda.html">
+                          <span>Rwanda</span>
+                        </a>
                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                           <path fill-rule="evenodd"
                                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -317,8 +320,47 @@
             Discover Rwanda – the "land of a thousand hills" – where lush volcanoes, dense rainforests, and serene lakes set the scene for once-in-a-lifetime wildlife encounters. From gorilla trekking in Volcanoes National Park to chimpanzee tracking in Nyungwe and Big Five safaris in Akagera, Rwanda offers breathtaking nature, luxury lodges, and rich culture all year round.
           </p>
         </div>
+
+        <div class="grid gap-10 lg:grid-cols-3 text-left">
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="image/1.jpg" alt="Volcanoes National Park" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800">Volcanoes National Park</h3>
+              <p class="mt-2 text-gray-600">
+                Home to mountain gorillas and golden monkeys. Ideal for hiking, conservation experiences, and luxury trekking.
+              </p>
+            </div>
+          </div>
+        
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="image/1.jpg" alt="Nyungwe National Park" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800">Nyungwe National Park</h3>
+              <p class="mt-2 text-gray-600">
+                Explore ancient rainforests, spot chimpanzees and over 700 bird species, and enjoy guided nature walks.
+              </p>
+            </div>
+          </div>
+        
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="image/1.jpg" alt="Akagera National Park" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800">Akagera National Park</h3>
+              <p class="mt-2 text-gray-600">
+                A classic savannah safari destination to see the Big Five, with opportunities for birding and game drives.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-12 text-center max-w-2xl mx-auto text-gray-600 text-lg">
+          <p>
+            Whether you seek thrilling wildlife encounters or peaceful lakeside retreats, Rwanda promises a deeply moving experience. Best visited from Dec–Feb and Jun–Sept.
+          </p>
+        </div>
+        
     
-        <div class="grid gap-8 lg:grid-cols-3 text-left">
+        <!-- <div class="grid gap-10 lg:grid-cols-3 text-left">
           <div>
             <h3 class="text-xl font-semibold text-gray-800">Volcanoes National Park</h3>
             <p class="mt-2 text-gray-600">
@@ -343,7 +385,7 @@
           <p>
             Whether you seek thrilling wildlife encounters or peaceful lakeside retreats, Rwanda promises a deeply moving experience. Best visited from Dec–Feb and Jun–Sept.
           </p>
-        </div>
+        </div> -->
       </div>
     </section>
     
