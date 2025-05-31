@@ -141,7 +141,7 @@
                 </div>
               </div>
     
-              <a href="about.html" class="hover:text-gray-300 transition">About</a>
+              <a href="#" class="hover:text-gray-300 transition">About</a>
               <a href="#" class="hover:text-gray-300 transition">Contact</a>
               <a href="enquire.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Enquire</a>
             </div>
@@ -299,30 +299,95 @@
       </script>
     </section>
 
-    <!-- header -->
-    <section class="relative h-full bg-cover bg-center bg-no-repeat" style="background-image: url('image/3.jpg');">
-        <div class="mx-auto max-w-7xl lg:pt-36 px-4 py-8 sm:px-6 lg:px-8">
-            <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-                <h2 class="mb-4 text-3xl lg:text-7xl tracking-tight font-extrabold text-gray-200">Our Destinations</h2>
-            </div>
-            <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-                <!-- <p class="font-light text-gray-900 sm:text-xl">We are a tech company established in 2008, providing world-class broadband connectivity and solutions to empower citizens, communities, governments, and businesses in Rwanda and the region.</p> -->
-            </div>
-        </div>
-    </section>
 
-    <section class="">
-      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto">
-          <h2 class="mb-4 text-2xl lg:text-4xl tracking-tight font-extrabold">What makes an African Safari so special?</h2>
-          <p class="text-lg text-gray-700 leading-relaxed">
-            Picture yourself hearing a lion’s roar echo across the savannah, or locking eyes with a mountain gorilla deep in the forest. From the thunder of the Great Migration to spotting elusive leopards in Kenya’s Masai Mara, every moment on safari is unforgettable. 
-            <br><br>
-            After your wildlife encounters, unwind on Zanzibar’s white beaches, snorkel in turquoise waters, and dive into its rich Swahili culture and cuisine. Whether exploring iconic parks like the Serengeti and Ngorongoro or hidden gems like Ruaha and Ol Pejeta, we craft safaris that leave lasting memories.
-          </p>
-        </div>
+    <section class="bg-[#c1baa7] py-20 px-6 sm:px-10 lg:px-16">
+  <div class="max-w-4xl mx-auto text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">Plan Your Safari</h2>
+    <p class="text-lg text-gray-700">Let us know about your dream adventure. The more details you give, the better we can craft your perfect safari.</p>
+  </div>
+
+  <form class="max-w-5xl mx-auto space-y-10 bg-white p-8 rounded-2xl shadow-lg">
+    <!-- Travel Destination -->
+    <div>
+      <label class="block text-lg font-semibold text-gray-800 mb-4">Where would you like to travel?</label>
+      <fieldset class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <label class="flex items-center gap-2 text-gray-700">
+          <input type="checkbox" name="destinations" value="Uganda" class="accent-gray-700">
+          Uganda
+        </label>
+        <label class="flex items-center gap-2 text-gray-700">
+          <input type="checkbox" name="destinations" value="Rwanda" class="accent-gray-700">
+          Rwanda
+        </label>
+        <label class="flex items-center gap-2 text-gray-700">
+          <input type="checkbox" name="destinations" value="Kenya" class="accent-gray-700">
+          Kenya
+        </label>
+        <label class="flex items-center gap-2 text-gray-700">
+          <input type="checkbox" name="destinations" value="Tanzania" class="accent-gray-700">
+          Tanzania
+        </label>
+        <label class="flex items-center gap-2 text-gray-700">
+          <input type="checkbox" name="destinations" value="DR Congo" class="accent-gray-700">
+          DR Congo
+        </label>
+      </fieldset>
+    </div>
+
+    <!-- Travel Date -->
+    <div>
+      <label class="block text-lg font-semibold text-gray-800 mb-4">When do you wish to travel?</label>
+      <select name="travel_date" class="w-full border border-gray-300 rounded-lg px-4 py-3 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-800">
+        <option value="" disabled selected>Select a month and year</option>
+        <option>June 2025</option>
+        <option>July 2025</option>
+        <option>August 2025</option>
+        <option>September 2025</option>
+        <option>October 2025</option>
+        <option>November 2025</option>
+      </select>
+    </div>
+
+    <!-- Duration & People -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label class="block text-lg font-semibold text-gray-800 mb-4">Number of days</label>
+        <input type="number" name="days" min="1" placeholder="e.g. 7" class="w-full border border-gray-300 rounded-lg px-4 py-3 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-800">
       </div>
-    </section>
+      <div>
+        <label class="block text-lg font-semibold text-gray-800 mb-4">Number of people</label>
+        <input type="number" name="people" min="1" placeholder="e.g. 4" class="w-full border border-gray-300 rounded-lg px-4 py-3 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-800">
+      </div>
+    </div>
+
+    <!-- Budget -->
+    <div>
+      <label class="block text-lg font-semibold text-gray-800 mb-4">Your budget</label>
+      <select name="budget" class="w-full border border-gray-300 rounded-lg px-4 py-3 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-800">
+        <option value="" disabled selected>Select your budget range</option>
+        <option>Under $3,000</option>
+        <option>$3,000 - $6,000</option>
+        <option>$6,000 - $10,000</option>
+        <option>$10,000+</option>
+      </select>
+    </div>
+
+    <!-- Safari Preferences -->
+    <div>
+      <label class="block text-lg font-semibold text-gray-800 mb-4">What do you want to see and do on your safari?</label>
+      <textarea name="preferences" rows="5" placeholder="Tell us about your dream safari, special occasion, must-sees, or interests..." class="w-full border border-gray-300 rounded-lg px-4 py-3 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-800 resize-none"></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button type="submit" class="inline-block px-10 py-3 bg-gray-800 hover:bg-gray-900 text-white text-lg font-semibold rounded-full shadow-md transition duration-300">
+        Submit Enquiry
+      </button>
+    </div>
+  </form>
+</section>
+
+
 
     <section class="m-10">
         <div class="w-full relative">
@@ -349,9 +414,9 @@
         </div>
     </section>
 
-      <section class="mx-auto mt-20 pb-20">
+    <section class="mx-auto mt-20 pb-20">
         <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-          <h2 class="mb-4 text-4xl lg:text-6xl tracking-tight font-extrabold">Our Destinations</h2>
+            <h2 class="mb-4 text-4xl lg:text-6xl tracking-tight font-extrabold">Our Destinations</h2>
         </div>
         <div class="grid gap-2 lg:grid-cols-4">
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm mx-auto">
@@ -424,7 +489,7 @@
                 </div>
             </div>
         </div>
-      </section>
+    </section>
       
     <script>
         var swiper = new Swiper(".progress-slide-carousel", {
@@ -443,6 +508,3 @@
        
 </body>
 </html>
-
-
-
